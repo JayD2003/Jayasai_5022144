@@ -1,3 +1,4 @@
+package exercise_1;
 public class InventryManagementSystem {
     public static void main(String[] args) {
         Inventry inventry = new Inventry();

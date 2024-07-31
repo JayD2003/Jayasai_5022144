@@ -1,3 +1,4 @@
+package exercise_1;
 import java.util.HashMap;
 
 public class Inventry {

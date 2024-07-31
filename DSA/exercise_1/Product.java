@@ -1,13 +1,16 @@
+package exercise_1;
 public class Product {
     private int productId;
     private String productName;
-    private String category;
+    private int quantity;
+    private double price;
 
     //constructor
-    public Product(int id,String name,String category){
+    public Product(int id,String name,int quantity,double price){
         this.productId = id;
         this.productName = name;
-        this.category = category;
+        this.quantity = quantity;
+        this.price = price;
     }
 
     // functions to get the information of the products 
@@ -19,8 +22,12 @@ public class Product {
         return this.productName;
     }
 
-    public String getCategory(){
-        return this.category;
+    public double getPrice(){
+        return this.price;
+    }
+
+    public int getQuantity(){
+        return this.quantity;
     }
 
     // functions to update the attributes
@@ -32,15 +39,20 @@ public class Product {
         this.productName = newName;
     }
 
-    public void updateCategory(String newCategory){
-        this.category = newCategory;
+    public void updateQuantity(int newQuantity){
+        this.quantity = newQuantity;
+    }
+
+    public void updatePrice(double newPrice){
+        this.price = newPrice;
     }
 
     //to show product details
     public void getDetails(){
         System.out.println("ID: "+this.productId+", Name: "+
-        this.productName+", Category: "+
-        this.category
+        this.productName+", Quantity: "+
+        this.quantity+", Price: "+
+        this.price
         );
     }
 
